@@ -41,7 +41,7 @@ class ArticleFragment : Fragment(R.layout.fragment_article){
     @SuppressLint("SetJavaScriptEnabled")
     private fun webViewSetUP(webView: WebView, article: Article) {
            webView.webViewClient= WebViewClient()
-        webView.settings.javaScriptEnabled = true
+           webView.settings.javaScriptEnabled = true
            article.url?.let {
                if(it.isNotEmpty()) {
                    webView.loadUrl(it)

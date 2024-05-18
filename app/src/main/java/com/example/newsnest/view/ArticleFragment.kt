@@ -25,7 +25,7 @@ class ArticleFragment : Fragment(R.layout.fragment_article){
         binding=FragmentArticleBinding.bind(view)
         newsViewModel = (activity as? MainActivity)?.newsViewModel
             ?: throw IllegalStateException("Activity must be MainActivity")
-        val article=args.article
+             val article=args.article
              webViewSetUP(binding.articleFragmentWebView,article)
         binding.FAB.setOnClickListener {
             article.let {

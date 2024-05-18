@@ -23,6 +23,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:clickable="true"
-        android:focusable="true" />
+        android:focusable="true"
+        android:contentDescription="@string/add_to_favorites" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

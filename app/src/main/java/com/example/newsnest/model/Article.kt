@@ -31,14 +31,15 @@ data class Article(
         if (source != other.source) return false
         if (title != other.title) return false
         if (url != other.url) return false
-        if (urlToImage != other.urlToImage) return false
-
+        if (urlToImage != other.urlToImage) {
+            return false
+        }
         return true
     }
     override fun hashCode(): Int {
         var result = id
         result = 31 * result + author.hashCode()
-        result = 31 * result + (content?.hashCode() ?: 0)
+        result = (31 * result) + content.hashCode()
         result = 31 * result + description.hashCode()
         result = 31 * result + publishedAt.hashCode()
         result = 31 * result + (source?.hashCode() ?: 0)

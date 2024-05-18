@@ -17,13 +17,13 @@ class NewsRepository(private val newsAPI: NewsAPI,private val db:ArticleDataBase
 
     suspend fun getHeadlines(countryCode: String, page: Int) {
         val response = newsAPI.getHeadlines(countryCode, page)
-        if (response?.body() != null) {
+        if (response.body() != null) {
             headlinesLiveData.postValue(response.body())
         }
     }
     suspend fun searchNews(searchQuery:String,pageNumber:Int){
         val response=newsAPI.searchNews(searchQuery,pageNumber)
-        if(response?.body()!=null){
+        if(response.body()!=null){
             searchLiveData.postValue(response.body())
         }
     }

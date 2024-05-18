@@ -58,8 +58,8 @@ class FavouritesFragment : Fragment(R.layout.fragment_favourites){
 
     private fun setUpRecycler() {
        newsAdapter= NewsAdapter(object : NewsAdapter.onClickListener {
-           override fun onItemClickListener(position: Article) {
-               val action=FavouritesFragmentDirections.actionFavouritesFragmentToArticleFragment(position)
+           override fun onItemClickListener(article: Article) {
+               val action=FavouritesFragmentDirections.actionFavouritesFragmentToArticleFragment(article)
                findNavController().navigate(action)
            }
        })

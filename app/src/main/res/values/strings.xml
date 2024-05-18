@@ -9,5 +9,9 @@
     <string name="favourites">Favourites</string>
     <string name="headlines">Headlines</string>
     <string name="search">Search</string>
-    <string name="search_news">Search News...</string>
+    <string name="search_news">Search News…</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="ItemHeadlines">Headlines</string>
+    <string name="itemfavourites">Favourites</string>
+    <string name="itemsearch">Search</string>
 </resources>

@@ -20,8 +20,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-
        <TextView
            android:id="@+id/articleTitle"
            android:layout_width="0dp"
@@ -63,7 +61,6 @@
           android:textStyle="bold"
           app:layout_constraintStart_toEndOf="@+id/article_Image"
           app:layout_constraintTop_toBottomOf="@+id/articleSource" />
-      />
 
    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

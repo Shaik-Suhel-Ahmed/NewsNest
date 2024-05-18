@@ -8,7 +8,7 @@ import com.example.newsnest.model.NewsResponse
 import com.example.newsnest.repository.NewsRepository
 import kotlinx.coroutines.launch
 
-class NewsViewModel(val repository: NewsRepository):ViewModel(){
+class NewsViewModel(private val repository: NewsRepository):ViewModel(){
     init {
         viewModelScope.launch {
             repository.getHeadlines("in", 1)

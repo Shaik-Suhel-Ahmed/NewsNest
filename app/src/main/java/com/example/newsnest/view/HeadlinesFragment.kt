@@ -16,7 +16,7 @@ import com.example.newsnest.model.Article
 class HeadlinesFragment : Fragment(R.layout.fragment_headlines), NewsAdapter.onClickListener {
 private lateinit var binding: FragmentHeadlinesBinding
     private lateinit var newsAdapter: NewsAdapter
-    lateinit var newsViewModel: NewsViewModel
+   private lateinit var newsViewModel: NewsViewModel
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding= FragmentHeadlinesBinding.bind(view)

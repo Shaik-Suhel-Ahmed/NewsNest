@@ -42,7 +42,7 @@ class ArticleFragment : Fragment(R.layout.fragment_article){
     private fun webViewSetUP(webView: WebView, article: Article) {
            webView.webViewClient= WebViewClient()
            webView.settings.javaScriptEnabled = true
-           article.url?.let {
+           article.url.let {
                if(it.isNotEmpty()) {
                    webView.loadUrl(it)
                }

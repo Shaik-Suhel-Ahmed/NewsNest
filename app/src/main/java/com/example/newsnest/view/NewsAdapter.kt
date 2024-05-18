@@ -15,7 +15,7 @@ import com.example.newsnest.model.Article
 
 class NewsAdapter(private val listener: onClickListener):RecyclerView.Adapter<NewsAdapter.MyViewHolder>(){
     interface onClickListener{
-        fun onItemClickListener(position: Article)
+        fun onItemClickListener(article: Article)
     }
 
     inner class MyViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){

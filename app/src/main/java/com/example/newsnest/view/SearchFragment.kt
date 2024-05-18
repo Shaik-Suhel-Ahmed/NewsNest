@@ -20,7 +20,7 @@ import kotlinx.coroutines.launch
 class SearchFragment : Fragment(R.layout.fragment_search) {
 private lateinit var binding:FragmentSearchBinding
 private lateinit var newsViewModel: NewsViewModel
-lateinit var newsAdapter: NewsAdapter
+private lateinit var newsAdapter: NewsAdapter
 var job:Job?=null
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
